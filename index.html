@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamilton - The Musical</title>
+    <style>
+      body {
+        background: linear-gradient(135deg, #e7a529 10%, #a37019 100%);
+      }
+      h1 {
+        text-align: center;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 70px;
+        margin: 0;
+        color: white;
+      }
+      h2 {
+        text-align: center;
+        font-size: 35px;
+        margin: 0;
+        color: white;
+      }
+      hr {
+        height: 2px;
+        width: 90%;
+        background-color: white;
+        border: none;
+      }
+      span {
+        display: block;
+        text-align: center;
+        font-style: oblique;
+        color: white;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 75%;
+      }
+      p {
+        color: white;
+        text-align: center;
+        line-height: 2;
+        font-size: 18px;
+      }
+      a {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+        font-weight: 800;
+      }
+      a:hover {
+        text-decoration: underline;
+        text-transform: capitalize;
+      }
+      button {
+        font-size: 20px;
+        transition: ease-in-out;
+        border: 2px solid black;
+        border-radius: 30px;
+        padding: 20px;
+        display: block;
+        margin: 0 auto;
+        transition: ease-in-out;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: black;
+        color: white;
+        border: 2px solid black;
+        box-shadow: 1px 4px grey;
+      }
+      div {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+        font-size: 25px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HAMILTON</h1>
+    <h2>An American Musical</h2>
+    <br />
+    <span>"Who lives, who dies, who tells your story"</span>
+    <hr />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/079/original/Hamilton.jpg?1647095821"
+      alt="Hamilton"
+    />
+    <p>
+      <strong>Hamilton: An American Musical</strong> is a
+      sung-and-rapped-through musical by <em>Lin-Manuel Miranda</em>. It tells
+      the story of American Founding Father Alexander Hamilton. The show draws
+      heavily from hip hop, as well as R&B, pop, soul, and traditional-style
+      show tunes. It casts non-white actors as the Founding Fathers and other
+      historical figures.
+    </p>
+    <a href="https://hamiltonmusical.com" target="_blank">
+      Be in the room where it happens
+    </a>
+    <br />
+    <br />
+    <button>Have you seen Hamilton?</button>
+    <br />
+    <br />
+    <div>Coded by Kelsey Bishop</div>
+    <script>
+      function hamilton() {
+        let musical = prompt("Have you seen Hamilton?");
+
+        if (musical === "yes") {
+          let liked = prompt("Did you like it?");
+          if (liked === "yes") {
+            alert("That's great, click the link and go see it again!");
+          } else {
+            if (liked === "no") {
+              alert("I'm sorry to hear that!");
+            }
+          }
+        }
+        if (musical === "no") {
+          alert("Click the link and go see it now!");
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", hamilton);
+    </script>
+  </body>
+</html>
